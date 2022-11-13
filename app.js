@@ -5,8 +5,6 @@ var ejs = require('ejs');
 var path = require('path');
 //github
 
-
-
 const dotenv = require("dotenv");
 //require("./db/conn")
 
@@ -78,9 +76,6 @@ app.use(function (req, res, next) {
     res.status(err.status || 500);
     res.send(err.message);
   });
-
-
-
 // Listen on port 5000
 app.listen(port, () => console.log(`Listening on port ${port}`))
 
